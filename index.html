@@ -1,0 +1,313 @@
+<h1>La Synthaxe et l'utilisation du Markdown</h1>
+
+<ol>
+<li><a href="#1-block-elements">Block Elements</a> <br />
+1.1 <a href="#11-paragraphs-and-line-break">Paragraphs and Line Break</a> <br />
+1.2 <a href="#12-headers">Headers</a> <br />
+1.3 <a href="#13-blockquotes">Blockquotes</a> <br />
+1.4 <a href="#14-lists">Lists</a> <br />
+1.5 <a href="#15-code-blocks">Code Blocks</a> <br />
+1.6 <a href="#16-horizontal-rules">Horizontal Rules</a>  </li>
+<li><a href="#2-span-elements">Span Elements</a> <br />
+2.1 <a href="#21-links">Links</a> <br />
+2.2 <a href="#22-emphasis">Emphasis</a> <br />
+2.3 <a href="#23-code">Code</a> <br />
+2.4 <a href="#24-images">Images</a></li>
+<li><a href="#3-miscellaneous">Miscellaneous</a> <br />
+3.1 <a href="#31-backslash-escapes">Backslash Escapes</a> <br />
+3.2 <a href="#32-automatic-links">Automatic Links</a></li>
+</ol>
+
+<h2><strong>1. Block Elements</strong></h2>
+
+<h3><strong>1.1 Paragraphs and Line Break</strong></h3>
+
+<p>A paragraph is simply one or more consecutive lines of text, separated by one or more blank lines. (A blank line is any line that looks like a blank line — a line containing nothing but spaces or tabs is considered blank.) Normal paragraphs should not be indented with spaces or tabs.</p>
+
+<p>The implication of the “one or more consecutive lines of text” rule is that Markdown supports “hard-wrapped” text paragraphs. This differs significantly from most other text-to-HTML formatters (including Movable Type’s “Convert Line Breaks” option) which translate every line break character in a paragraph into a <code>&lt;br /&gt;</code> tag.</p>
+
+<p>When you do want to insert a <code>&lt;br /&gt;</code> break tag using Markdown, you end a line with two or more spaces, then type return.</p>
+
+<h3><strong>1.2 Headers</strong></h3>
+
+<p>Headers go from 1 (the largest) to 6 (the smallest) and are written like this :</p>
+
+<ul>
+<li><code># H1</code><br/> </li>
+<li><code>## H2</code><br/></li>
+<li><code>### H3</code> <br/></li>
+<li><code>#### H4</code><br/></li>
+<li><code>##### H5</code><br/></li>
+<li><p><code>###### H6</code><br/></p>
+
+<h4>Dispayed :</h4>
+
+<h1>H1</h1>
+
+<h2>H2</h2>
+
+<h3>H3</h3>
+
+<h4>H4</h4>
+
+<h5>H5</h5>
+
+<h6>H6</h6>
+
+<p><em>But there is another way to write <code># H1</code> and <code>## H2</code> if needed :</em></p></li>
+</ul>
+
+<p><code>H1</code></br>
+<code>===========</code></p>
+
+<p><code>H2</code></br>
+<code>-----------</code></p>
+
+<p></br></p>
+
+<p>#### Dispayed :</p>
+
+<h1>H1</h1>
+
+<p></br></p>
+
+<h2>H2</h2>
+
+<p></br></p>
+
+<h3><strong>1.3 Blockquotes</strong></h3>
+
+<h3><strong>1.4 Lists</strong></h3>
+
+<p><strong>MarkDown</strong> supports ordered and unordered lists. <br />
+- <strong>Unordered</strong> lists use asterisks(*), pluses(+), and hyphens(-) as list markers: <br />
+   #### Exemple for * : </p>
+
+<blockquote>
+  <p>* first item <br />
+* second item <br />
+* third item <br />
+   #### Exemple for + :
++ first item <br />
++ second item <br />
++ third item
+   #### Exemple for - :
+- first item <br />
+- second item <br />
+- third item
+   #### The output:
+* first item
+* second item
+* third item  </p>
+</blockquote>
+
+<p><ul>
+<li><strong>Ordered</strong> lists use numbers followed by periods. <br />
+It's important to note that the actual numbers you use does not matter.
+<ol><li>#### Exemple for numbers that follow each other :</p>
+
+<blockquote>
+  <ol>
+<li>first item </li>
+<li>second item</li>
+<li><p>third item</li>
+<li>#### Exemple for numbers that doesn't follow each other :
+5. fifth item <br />
+8. sixth item <br />
+10. seventh item</p>
+
+<h4>The output :</h4></li>
+<li><p>fifth item <br /></p></li>
+<li>sixth item <br /></li>
+<li><p>seventh item  </li>
+<li>#### Exemple if you always use the same number:
+1. first item <br />
+1. second item <br />
+1. third item <br /></p>
+
+<h4>The output</h4></li>
+<li><p>first item</p></li>
+<li>second item</li>
+<li>third item
+<h1>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</h1></li></ol>
+
+<p></li>
+</ul></p>
+
+<blockquote>
+  <blockquote>
+  <blockquote>
+  <blockquote>
+  <blockquote>
+  <blockquote>
+  <p>1db49e88a97d38df9f0d1101b763da4c5a305f9b</p>
+
+<h3><strong>1.5 Code Blocks</strong></h3>
+
+<p></li>
+</ol></p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+
+<p>To be able to insert text in HTML, just paste the HTML text and type on TAB</p>
+
+<p>Example:</p>
+
+<pre><code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Ma première page avec du style&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;!-- Menu de navigation du site --&gt;
+&lt;ul class="navbar"&gt;
+&lt;li&gt;&lt;a href="index.html"&gt;Home page&lt;/a&gt;
+&lt;li&gt;&lt;a href="reflexions.html"&gt;Réflexions&lt;/a&gt;
+&lt;li&gt;&lt;a href="ville.html"&gt;Ma ville&lt;/a&gt;
+&lt;li&gt;&lt;a href="liens.html"&gt;Liens&lt;/a&gt;
+&lt;/ul&gt;
+
+&lt;!-- Contenu principal --&gt;
+&lt;h1&gt;Ma première page avec du style&lt;/h1&gt;
+
+&lt;p&gt;Bienvenue sur ma page avec du style!
+
+&lt;p&gt;Il lui manque des images, mais au moins, elle a du style. Et elle a desliens, même s'ils ne mènent nulle part...
+&amp;hellip;
+
+&lt;p&gt;Je devrais étayer, mais je ne sais comment encore.
+
+&lt;!-- Signer et dater la page, c'est une question de politesse! --&gt;
+&lt;address&gt;Fait le 5 avril 2004&lt;br&gt;
+par moi.&lt;/address&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h3><strong>1.6 Horizontal Rules</strong></h3>
+
+<p>You can produce a horizontal rule tag ( <code>&lt;hr /&gt;</code> ) by placing three or more hyphens, asterisks, or underscores on a line by themselves. If you wish, you may use spaces between the hyphens or asterisks.</p>
+
+<h2><strong>2. Span Elements</strong></h2>
+
+<h3><strong>2.1 Links</strong></h3>
+
+<p>You can highlight a word or even a sentence as a link access.
+URL's or repositories have adresses that can be linked.
+If a URL is not put into braces </p>
+
+<ol>
+<li><p><code>This is [an example](http://example.com/ "Title") inline link.</code></p></li>
+<li><p><code>[This link](http://example.net/)</code></p></li>
+<li><p><code>[I'm a relative reference to a repository file](../blob/master/LICENSE)</code></p>
+
+<h4>Dispayed :</h4></li>
+<li><p>This is <a href="http://example.com/" title="Title">an example</a> inline link.</p></li>
+<li><p><a href="http://example.net/">This link</a></p></li>
+<li><p><a href="../blob/master/LICENSE">I'm a relative reference to a repository file</a></p></li>
+</ol>
+
+<p></br> </p>
+
+<h3><strong>2.2 Emphasis</strong></h3>
+
+<h3><strong>2.3 Code</strong></h3>
+
+<p>To indicate a span of code, wrap it with backtick quotes(`). <br />
+This is used to indicate code within a normal paragraph. <br />
+- #### Exemple: </p>
+
+<blockquote>
+  <p>Use the <code>printf()</code> function.  </p>
+</blockquote>
+
+<p>If you want to include a literal backtick charachter within a code span, <br />
+you can use multiple backticks as the opeing and closing delimiters.
+- #### Exemple: </p>
+
+<blockquote>
+  <p>`` There is a backtick here -> <code>``
+   #### The output:
+`` There is a backtick here -&gt;</code> `` </p>
+
+<h1>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</h1>
+
+<blockquote>
+  <blockquote>
+  <blockquote>
+  <blockquote>
+  <blockquote>
+  <blockquote>
+  <p>1db49e88a97d38df9f0d1101b763da4c5a305f9b</p>
+
+<h3><strong>2.4 Images</strong></h3>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+
+<p>To insert a still or dynamic image:</p>
+
+<p>*![sitename](linkofthesite) = image which is not clickable</p>
+
+<p>Example:
+<img src="https://media.giphy.com/media/aacdmWnYUMRkk/giphy.gif" alt="Giphy.com" title="" /></p>
+
+<p>*[![sitename](linkofpicture)](linkofthesite) = image which refers to the site</p>
+
+<p>Example: <a href="https://www.prestashop.com/fr"><img src="https://assets.prestashop2.com/sites/default/files/styles/blog_750x320/public/blog/fr/files/2015/01/7-resources-code-1024x537.png?itok=AXSLDOKg" alt="Prestashop2.com" title="" /></a></p>
+
+<h2><strong>3. Miscellaneous</strong></h2>
+
+<h3><strong>3.1 Backslash Escapes</strong></h3>
+
+<p>Markdown allows you to use backslash escapes to generate literal characters which would otherwise have special meaning in Markdown’s formatting syntax. For example, if you wanted to surround a word with literal asterisks (instead of an HTML <code>&lt;em&gt;</code> tag), you can use backslashes before the asterisks.</p>
+
+<p>Markdown provides backslash escapes for the following characters:</p>
+
+<ol>
+<li><p><code>\</code>    backshlass</p></li>
+<li><p><code>`</code>  backtick</p></li>
+<li><p><code>*</code>   asterisk</p></li>
+<li><p><code>_</code>   underscore</p></li>
+<li><p><code>{}</code>  curly braces</p></li>
+<li><p><code>[]</code>  square brackets</p></li>
+<li><p><code>()</code>  parentheses</p></li>
+<li><p><code>#</code>   hashtag</p></li>
+<li><p><code>+</code>   plus sign</p></li>
+<li><p><code>-</code>   minus sign (hyphen)</p></li>
+<li><p><code>.</code>   dot</p></li>
+<li><p><code>!</code>  exclamation mark</p>
+
+<h3><strong>3.2 Automatic Links</strong></h3></li>
+</ol>
+
+<p>If an e-mail adress or a website link is put w/o any markup synthax, Markdown will automatically "translate" it into usable links:</p>
+
+<p>For example, this : <code>https://fr.wikipedia.org/wiki/Queen</code> will become this : https://fr.wikipedia.org/wiki/Queen, awesome isn't it? </p>
+
+<p><br/>  </p>
+
+<p>In fact, Markdown will refer to the adress in HTML code like this :
+<code>HTML
+&lt;a href="https://fr.wikipedia.org/wiki/Queen"&gt;https://fr.wikipedia.org/wiki/Queen&lt;/a&gt;
+</code>
+It's the same procedure with an e-mail address as address@example.com referred like this in Markdown :</p>
+
+<p><code>HTML
+&lt;a href="&amp;#x6D;&amp;#x61;i&amp;#x6C;&amp;#x74;&amp;#x6F;:&amp;#x61;&amp;#x64;&amp;#x64;&amp;#x72;&amp;#x65;
+&amp;#115;&amp;#115;&amp;#64;&amp;#101;&amp;#120;&amp;#x61;&amp;#109;&amp;#x70;&amp;#x6C;e&amp;#x2E;&amp;#99;&amp;#111;
+&amp;#109;"&gt;&amp;#x61;&amp;#x64;&amp;#x64;&amp;#x72;&amp;#x65;&amp;#115;&amp;#115;&amp;#64;&amp;#101;&amp;#120;&amp;#x61;
+&amp;#109;&amp;#x70;&amp;#x6C;e&amp;#x2E;&amp;#99;&amp;#111;&amp;#109;&lt;/a&gt;
+</code></p>
